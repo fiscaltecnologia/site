@@ -2,12 +2,12 @@ import { notFound } from "next/navigation";
 import { allPages } from "contentlayer/generated";
 
 import { Mdx } from "@/components/content/mdx-components";
+import { constructMetadata, getBlurDataURL } from "@/lib/utils";
 
 import "@/styles/mdx.css";
 
 import { Metadata } from "next";
 
-import { constructMetadata } from "@/lib/utils";
 
 export async function generateStaticParams() {
   return allPages.map((page) => ({
@@ -28,7 +28,7 @@ export async function generateMetadata({
   const { title, description } = page;
 
   return constructMetadata({
-    title: `${title} – Next Template`,
+    title: `${title} Fiscaltech Sistemas`,
     description: description,
   });
 }
@@ -46,6 +46,15 @@ export default async function PagePage({
     notFound();
   }
 
+  const [images] = await Promise.all([
+    await Promise.all(
+      page.images.map(async (src: string) => ({
+        src,
+        blurDataURL: await getBlurDataURL(src),
+      })),
+    ),
+  ]);
+
   return (
     <article className="container max-w-3xl py-6 lg:py-12">
       <div className="space-y-4">
@@ -57,7 +66,7 @@ export default async function PagePage({
         )}
       </div>
       <hr className="my-4" />
-      <Mdx code={page.body.code} />
+      <Mdx code={page.body.code} images={images} />
     </article>
   );
 }

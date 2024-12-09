@@ -4,9 +4,9 @@ import { env } from "@/env.mjs";
 const site_url = env.NEXT_PUBLIC_APP_URL;
 
 export const siteConfig: SiteConfig = {
-  name: "Next Starter",
+  name: "Fiscal Tecnologia e Automação",
   description:
-    "Get your project off to an explosive start with Auth & User Roles! Harness the power of Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui to build your next big thing.",
+    "Descrição.",
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
@@ -17,31 +17,42 @@ export const siteConfig: SiteConfig = {
 };
 
 export const footerLinks: SidebarNavItem[] = [
+  // {
+  //   title: "Fiscaltech",
+  //   items: [
+  //     { title: "Sobre", href: "#" },
+  //     { title: "Empresa", href: "#" },
+  //     { title: "Sistemas", href: "/terms" },
+  //     { title: "Blog", href: "/privacy" },
+  //     { title: "Fale Conosco", href: "/privacy" },
+  //   ],
+  // },
   {
-    title: "Company",
+    title: "Empresa",
     items: [
-      { title: "About", href: "#" },
-      { title: "Enterprise", href: "#" },
-      { title: "Terms", href: "/terms" },
-      { title: "Privacy", href: "/privacy" },
+      { title: "Nosso Propósito", href: "#" },
+      { title: "História", href: "#" },
+      { title: "Certificações", href: "#" },
+      { title: "Ética e Compliance", href: "#" },
+      { title: "LGPD", href: "#" },
     ],
   },
   {
-    title: "Product",
+    title: "Sistemas",
     items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
+      { title: "Fiscalização em Trânsito", href: "/produto-1" },
+      { title: "Pesagem em Movimento", href: "/produto-2" },
+      { title: "Gestão Operacional", href: "/produto-3" },
+      { title: "Cercamento Eletrônico", href: "/produto-4" },
     ],
   },
   {
-    title: "Docs",
+    title: "Entre em contato",
     items: [
-      { title: "Introduction", href: "#" },
-      { title: "Installation", href: "#" },
-      { title: "Components", href: "#" },
-      { title: "Code Blocks", href: "#" },
+      { title: "+55 (41) 3314-3400", href: "#" },
+      { title: "comercial@fiscaltech.com.br", href: "#" },
+      { title: "Rua Eng. Júlio César de Souza Araújo, 266 CIC Curitiba - Paraná - Brasil", href: "#" },
+      { title: "Trabalhe Conosco", href: "#" },
     ],
   },
 ];

@@ -1,29 +1,24 @@
 export const BLOG_CATEGORIES: {
   title: string;
-  slug: "news" | "education";
+  slug: "news" | "systems";
   description: string;
 }[] = [
   {
-    title: "News",
+    title: "Notícias",
     slug: "news",
-    description: "Updates and announcements from Next Template.",
+    description: "Notícias e atualizações da Fiscaltech.",
   },
   {
-    title: "Education",
-    slug: "education",
-    description: "Educational content about template management.",
+    title: "Sistemas",
+    slug: "systems",
+    description: "Notícias e atualizações dos sistemas da Fiscaltech.",
   },
 ];
 
 export const BLOG_AUTHORS = {
-  mickasmt: {
-    name: "mickasmt",
-    image: "/_static/avatars/mickasmt.png",
-    twitter: "miickasmt",
-  },
-  shadcn: {
-    name: "shadcn",
-    image: "/_static/avatars/shadcn.jpeg",
-    twitter: "shadcn",
+  gustavolobo: {
+    name: "SGIF",
+    image: "/_static/logo-2.png",
+    twitter: "fiscaltech",
   },
 };

@@ -28,7 +28,7 @@ export function BlogHeaderLayout() {
           </h1>
           <p className="mt-3.5 text-base text-muted-foreground md:text-lg">
             {data?.description ||
-              "Latest news and updates from Next Auth Roles Template."}
+              "Últimas notícias e atualizações da Fiscaltech."}
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export function BlogHeaderLayout() {
             role="list"
             className="flex w-full flex-1 gap-x-2 border-b text-[15px] text-muted-foreground"
           >
-            <CategoryLink title="All" href="/blog" active={!slug} />
+            <CategoryLink title="Todas" href="/blog" active={!slug} />
             {BLOG_CATEGORIES.map((category) => (
               <CategoryLink
                 key={category.slug}
@@ -46,7 +46,6 @@ export function BlogHeaderLayout() {
                 active={category.slug === slug}
               />
             ))}
-            <CategoryLink title="Guides" href="/guides" active={false} />
           </ul>
         </nav>
       </MaxWidthWrapper>
@@ -70,7 +69,7 @@ export function BlogHeaderLayout() {
             </div>
             <ul role="list" className="mb-14 w-full p-3 text-muted-foreground">
               <CategoryLink
-                title="All"
+                title="Todas"
                 href="/blog"
                 active={!slug}
                 clickAction={closeDrawer}
@@ -86,12 +85,6 @@ export function BlogHeaderLayout() {
                   mobile
                 />
               ))}
-              <CategoryLink
-                title="Guides"
-                href="/guides"
-                active={false}
-                mobile
-              />
             </ul>
           </Drawer.Content>
           <Drawer.Overlay />

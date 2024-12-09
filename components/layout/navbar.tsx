@@ -3,6 +3,7 @@
 import { useContext } from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
+import logoImage from "@/public/_static/logo.png";
 import { useSession } from "next-auth/react";
 
 import { docsConfig } from "@/config/docs";
@@ -16,6 +17,9 @@ import { DocsSearch } from "@/components/docs/search";
 import { ModalContext } from "@/components/modals/providers";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+
+import BlurImage from "../shared/blur-image";
+import { NavigationMenuDemo } from "./navigation-menu";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -48,14 +52,24 @@ export function NavBar({ scroll = false }: NavBarProps) {
         large={documentation}
       >
         <div className="flex gap-6 md:gap-10">
-          <Link href="/" className="flex items-center space-x-1.5">
-            <Icons.logo />
-            <span className="font-satoshi text-xl font-bold">
-              {siteConfig.name}
-            </span>
-          </Link>
+          <BlurImage
+            src={logoImage}
+            alt="ligth preview landing"
+            className="flex object-contain object-center"
+            width={96}
+            // height={10}
+            priority
+            // placeholder="blur"
+          />
+          {/* <Link href="/" className="flex items-center space-x-1.5"> */}
+          {/* <Icons.logo /> */}
 
-          {links && links.length > 0 ? (
+          {/* <span className="font-satoshi text-xl font-bold"> */}
+          {/* {siteConfig.name} */}
+          {/* </span> */}
+          {/* </Link> */}
+
+          {/* {links && links.length > 0 ? (
             <nav className="hidden gap-6 md:flex">
               {links.map((item, index) => (
                 <Link
@@ -74,7 +88,9 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 </Link>
               ))}
             </nav>
-          ) : null}
+          ) : null} */}
+
+          <NavigationMenuDemo />
         </div>
 
         <div className="flex items-center space-x-3">
@@ -100,7 +116,21 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </div>
           ) : null}
 
-          {session ? (
+          <Link
+            href={"#"}
+            className="hidden md:block"
+          >
+            <Button
+              className="gap-2 px-4"
+              variant="default"
+              size="sm"
+              rounded="xl"
+            >
+              <span>Fale Conosco</span>
+            </Button>
+          </Link>
+
+          {/* {session ? (
             <Link
               href={session.user.role === "ADMIN" ? "/admin" : "/dashboard"}
               className="hidden md:block"
@@ -127,7 +157,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </Button>
           ) : (
             <Skeleton className="hidden h-9 w-24 rounded-xl lg:flex" />
-          )}
+          )} */}
         </div>
       </MaxWidthWrapper>
     </header>

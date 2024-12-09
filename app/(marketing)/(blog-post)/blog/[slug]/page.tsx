@@ -155,7 +155,7 @@ export default async function PostPage({
         {relatedArticles.length > 0 && (
           <div className="flex flex-col space-y-4 pb-16">
             <p className="font-heading text-2xl text-foreground">
-              More Articles
+              Mais Artigos
             </p>
 
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:gap-6">

@@ -21,6 +21,7 @@ const nextConfig = {
         hostname: "randomuser.me",
       },
     ],
+    
   },
   experimental: {
     serverComponentsExternalPackages: ["@prisma/client"],
