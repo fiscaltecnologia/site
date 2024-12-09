@@ -6,6 +6,7 @@
     cmds = [
         "echo 'Build is already in setup!'", 
         "npm install -g pnpm", 
+        "export PATH=$(npm bin -g):$PATH"
     ]
 
 [phases.install]
