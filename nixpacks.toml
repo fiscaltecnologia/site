@@ -1,15 +1,19 @@
-providers = ["node"]
+[providers]
+  providers = ["node"]
 
 [phases.setup]
-nixPkgs = ["nodejs_20"]
-aptPkgs = ["openssl"]
-cmds = ["echo 'Build is already in setup!'", "npm install -g corepack", "corepack enable", "corepack prepare pnpm@9.15.0 --activate"]
+    nixPkgs = ["nodejs_20"]
+    aptPkgs = ["openssl"]
+    cmds = [
+        "echo 'Build is already in setup!'", 
+        "npm install -g pnpm", 
+    ]
 
 [phases.install]
-cmds = ["pnpm istall"]
+    cmds = ["pnpm istall"]
 
 [phases.build]
-cmds = ["pnpm run build"]
+    cmds = ["pnpm run build"]
 
 [phases.start]
-cmds = ["pnpm run start"]
+    cmds = ["pnpm run start"]
