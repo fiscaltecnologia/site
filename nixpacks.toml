@@ -1,7 +1,5 @@
 [build]
 install_cmd = "npm install -g pnpm && pnpm install"
-build_cmd = "pnpm run build"
-start_cmd = "pnpm start"
 
 [labels]
 keep = "true"

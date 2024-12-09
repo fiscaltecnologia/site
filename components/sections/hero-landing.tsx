@@ -50,7 +50,7 @@ export default async function HeroLanding() {
               Há 30 anos{" "}
             </h1>
             <h1 className="text-text font-satoshi text-[20px] font-black leading-[1.15] tracking-tight sm:text-4xl md:text-4xl md:leading-[1.15]">
-              <span className="bg-gradient-to-r bg-clip-text text-transparent text-white">
+              <span className="bg-gradient-to-r bg-clip-text text-white">
                 {/* /*from-violet-600 via-blue-600 to-cyan-500 */}
                 valorizando a vida com trânsito seguro.
               </span>

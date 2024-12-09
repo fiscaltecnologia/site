@@ -79,7 +79,7 @@ export function NavigationMenuDemo() {
               {/* <li className="row-span-4">
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
                     <Icons.logo className="h-6 w-6" />
@@ -95,7 +95,7 @@ export function NavigationMenuDemo() {
               <li className="row-span-5 items-center">
                 <NavigationMenuLink asChild>
                   <a
-                    className="text-center items-center flex h-full w-full select-none flex-col justify-end rounded-md bg-primary bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="text-center items-center flex size-full select-none flex-col justify-end rounded-md bg-primary bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
@@ -152,7 +152,7 @@ export function NavigationMenuDemo() {
               <li className="row-span-4 items-center">
                 <NavigationMenuLink asChild>
                   <a
-                    className="text-center items-center flex h-full w-full select-none flex-col justify-end rounded-md bg-primary bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="text-center items-center flex size-full select-none flex-col justify-end rounded-md bg-primary bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
                     <BlurImage

@@ -33,7 +33,7 @@ export function CarouselDemo() {
                         <BlurImage
                           src={image}
                           alt="ligth preview landing"
-                          className="object-cover w-full h-full"
+                          className="object-cover size-full"
                         //   width={1500}
                         //   height={750}
                           priority
