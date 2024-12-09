@@ -1,5 +1,5 @@
 [build]
-install_cmd = "npm install -g pnpm && pnpm install"
-
-[labels]
-keep = "true"
+  node_version = "16"
+  disable_cache = true
+  package_manager = "pnpm"
+  command = "pnpm run build"
