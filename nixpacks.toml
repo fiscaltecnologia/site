@@ -1,12 +1,11 @@
-# providers = ["node"]
+providers = ["node"]
 
 [phases.setup]
     nixPkgs = ["nodejs_20"]
     aptPkgs = ["openssl"]
     cmds = [
         "echo 'Build is already in setup!'", 
-        "npm install -g pnpm", 
-        "export PATH=$(npm bin -g):$PATH"
+        "npm install pnpm", 
     ]
 
 [phases.install]
@@ -14,6 +13,3 @@
 
 [phases.build]
     cmds = ["pnpm run build"]
-
-[phases.start]
-    cmds = ["pnpm run start"]
