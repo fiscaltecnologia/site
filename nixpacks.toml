@@ -1,25 +1,7 @@
-# nixpacks.toml
 [build]
-# Define o comando para instalar as dependências com pnpm
-cmd = "pnpm install --frozen-lockfile"
+install_cmd = "npm install -g pnpm && pnpm install"
+build_cmd = "pnpm run build"
+start_cmd = "pnpm start"
 
-[phases.install]
-# Especifica o Node.js e pnpm para o build
-apt_pkgs = ["curl", "git"] # Pacotes necessários
-cmds = [
-    "corepack enable",           # Ativa o gerenciador Corepack
-    "corepack prepare pnpm@latest --activate", # Instala a versão mais recente do pnpm
-    "pnpm install --frozen-lockfile"           # Instala as dependências com lockfile
-]
-
-[phases.build]
-# Comando de build da aplicação
-cmd = "pnpm run build"
-
-[phases.start]
-# Comando para iniciar o servidor
-cmd = "pnpm start"
-
-[dependencies]
-# Lista explícita de dependências para o build
-packages = ["nodejs", "pnpm"]
+[labels]
+keep = "true"
