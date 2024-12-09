@@ -1,8 +1,14 @@
-[build]
-  node_version = "20"
-  disable_cache = true
-  package_manager = "pnpm"
-  command = "pnpm run build"
+providers = ["node"]
 
-[install]
-  command = "pnpm i"
+[phases.setup]
+nixPkgs = ["nodejs", "pnpm"]
+cmds = ["echo Gustavo!", "npm install -g corepack", corepack enable", "corepack prepare pnpm@9.1.0 --activate"]
+
+[phases.install]
+cmds = ["pnpm istall"]
+
+[phases.build]
+cmds = ["pnpm run build"]
+
+[phases.start]
+cmds = ["pnpm run start"]
