@@ -1,5 +1,5 @@
 [build]
-  node_version = "16"
+  node_version = "20"
   disable_cache = true
   package_manager = "pnpm"
   command = "pnpm run build"
