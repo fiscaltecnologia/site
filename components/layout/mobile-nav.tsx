@@ -5,14 +5,12 @@ import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useSession } from "next-auth/react";
-
 import { docsConfig } from "@/config/docs";
 import { marketingConfig } from "@/config/marketing";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { DocsSidebarNav } from "@/components/docs/sidebar-nav";
 import { Icons } from "@/components/shared/icons";
-
 import { ModeToggle } from "./mode-toggle";
 
 export function NavMobile() {
@@ -72,7 +70,7 @@ export function NavMobile() {
             </li>
           ))}
 
-          {session ? (
+          {/* {session ? (
             <>
               {session.user.role === "ADMIN" ? (
                 <li className="py-3">
@@ -118,7 +116,7 @@ export function NavMobile() {
                 </Link>
               </li>
             </>
-          )}
+          )} */}
         </ul>
 
         {documentation ? (
@@ -127,13 +125,13 @@ export function NavMobile() {
           </div>
         ) : null}
 
-        <div className="mt-5 flex items-center justify-end space-x-4">
+        {/* <div className="mt-5 flex items-center justify-end space-x-4">
           <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
             <Icons.gitHub className="size-6" />
             <span className="sr-only">GitHub</span>
           </Link>
           <ModeToggle />
-        </div>
+        </div> */}
       </nav>
     </>
   );

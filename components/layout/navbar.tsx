@@ -86,7 +86,9 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </nav>
           ) : null} */}
 
-          <NavigationMenuDemo />
+          <nav className="hidden gap-6 md:flex">
+            <NavigationMenuDemo />
+          </nav>
         </div>
 
         <div className="flex items-center space-x-3">
@@ -99,7 +101,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
               <div className="flex lg:hidden">
                 <Icons.search className="size-6 text-muted-foreground" />
               </div>
-              <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
                 <Link
                   href={siteConfig.links.github}
                   target="_blank"
@@ -108,7 +110,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                   <Icons.gitHub className="size-7" />
                   <span className="sr-only">GitHub</span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           ) : null}
 
