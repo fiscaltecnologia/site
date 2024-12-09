@@ -3,3 +3,6 @@
   disable_cache = true
   package_manager = "pnpm"
   command = "pnpm run build"
+
+[install]
+  command = "pnpm i"
