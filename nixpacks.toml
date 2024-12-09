@@ -9,7 +9,7 @@ providers = ["node"]
     ]
 
 [phases.install]
-    cmds = ["pnpm istall"]
+    cmds = ["pnpm install"]
 
 [phases.build]
     cmds = ["pnpm run build"]
