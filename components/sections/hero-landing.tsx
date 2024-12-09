@@ -107,7 +107,7 @@ export default async function HeroLanding() {
             </div>
             <div className="flex justify-center space-x-2">
               <Link
-                href="/docs"
+                href="/work-with-us"
                 prefetch={true}
                 className={cn(
                   buttonVariants({ rounded: "xl", size: "lg" }),
@@ -138,7 +138,7 @@ export default async function HeroLanding() {
             </div>
             <div className="flex justify-center space-x-2">
               <Link
-                href="/docs"
+                href="/ethics-and-compliance"
                 prefetch={true}
                 className={cn(
                   buttonVariants({ rounded: "xl", size: "lg" }),

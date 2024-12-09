@@ -1,10 +1,10 @@
 {
-  "name": "next-auth-roles-template",
-  "version": "0.0.1",
+  "name": "site",
+  "version": "1.0.0",
   "private": true,
   "author": {
-    "name": "mickasmt",
-    "url": "https://twitter.com/mickasmt"
+    "name": "Fiscaltech",
+    "url": "https://fiscaltech.com.br"
   },
   "scripts": {
     "dev": "next dev",

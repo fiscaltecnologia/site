@@ -16,9 +16,8 @@ export const BLOG_CATEGORIES: {
 ];
 
 export const BLOG_AUTHORS = {
-  gustavolobo: {
+  sgif: {
     name: "SGIF",
     image: "/_static/logo-2.png",
-    twitter: "fiscaltech",
   },
 };

@@ -18,7 +18,7 @@ export default function NotFound() {
           href="/"
           className="text-muted-foreground underline underline-offset-4 hover:text-blue-500"
         >
-          Início
+          início
         </Link>
         .
       </p>

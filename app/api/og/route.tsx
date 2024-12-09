@@ -30,7 +30,7 @@ export async function GET(req: Request) {
 
     const fontSize = heading.length > 80 ? "60px" : "80px"
 
-    const githubName = "mickasmt";
+    // const githubName = "mickasmt";
 
     return new ImageResponse(
       (
@@ -55,7 +55,7 @@ export async function GET(req: Request) {
               color: 'transparent'
             }}
           >
-            Next Template
+            Fiscaltech
           </div>
 
           <div tw="flex flex-col flex-1 py-16">
@@ -80,11 +80,10 @@ export async function GET(req: Request) {
           </div>
 
           <div tw="flex items-center w-full justify-between">
-            <div
+            {/* <div
               tw="flex items-center text-xl"
               style={{ fontFamily: "Inter", fontWeight: "normal" }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="avatar"
                 width="65"
@@ -103,9 +102,9 @@ export async function GET(req: Request) {
                 </div>
                 <div>Open Source Designer</div>
               </div>
-            </div>
+            </div> */}
 
-            <div
+            {/* <div
               tw="flex items-center text-xl"
               style={{ fontFamily: "Inter", fontWeight: "normal" }}
             >
@@ -125,8 +124,8 @@ export async function GET(req: Request) {
                   stroke-linejoin="round"
                 />
               </svg>
-              <div tw="flex ml-2">github.com/mickasmt/next-auth-roles-template</div>
-            </div>
+              <div tw="flex ml-2">github.com/mickasmt/next-auth-roles-template</div> */}
+            {/* </div> */}
           </div>
         </div>
       ),

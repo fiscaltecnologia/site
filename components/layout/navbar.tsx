@@ -5,19 +5,15 @@ import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import logoImage from "@/public/_static/logo.png";
 import { useSession } from "next-auth/react";
-
 import { docsConfig } from "@/config/docs";
 import { marketingConfig } from "@/config/marketing";
 import { siteConfig } from "@/config/site";
-import { cn } from "@/lib/utils";
 import { useScroll } from "@/hooks/use-scroll";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 import { DocsSearch } from "@/components/docs/search";
 import { ModalContext } from "@/components/modals/providers";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
-
 import BlurImage from "../shared/blur-image";
 import { NavigationMenuDemo } from "./navigation-menu";
 
@@ -117,7 +113,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
           ) : null}
 
           <Link
-            href={"#"}
+            href={"/contact"}
             className="hidden md:block"
           >
             <Button

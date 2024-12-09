@@ -21,11 +21,8 @@ export default async function Author({
       className="size-8 rounded-full transition-all group-hover:brightness-90"
     />
   ) : (
-    <Link
-      href={`https://twitter.com/${authors[username].twitter}`}
+    <div
       className="group flex w-max items-center space-x-2.5"
-      target="_blank"
-      rel="noopener noreferrer"
     >
       <Image
         src={authors[username].image}
@@ -38,8 +35,8 @@ export default async function Author({
         <p className="font-semibold text-foreground max-md:text-sm">
           {authors[username].name}
         </p>
-        {/* <p className="text-sm text-muted-foreground">@{authors[username].twitter}</p> */}
+        <p className="text-sm text-muted-foreground">Fiscaltech</p>
       </div>
-    </Link>
+    </div>
   );
 }

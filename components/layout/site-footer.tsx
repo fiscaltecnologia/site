@@ -1,14 +1,10 @@
 import * as React from "react";
 import Link from "next/link";
 import logoImage from "@/public/_static/logo.png";
-
-import { footerLinks, siteConfig } from "@/config/site";
+import { footerLinks } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/layout/mode-toggle";
-
-import { NewsletterForm } from "../forms/newsletter-form";
 import BlurImage from "../shared/blur-image";
-import { Icons } from "../shared/icons";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
@@ -26,9 +22,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
                   alt="ligth preview landing"
                   className="flex object-contain object-center"
                   width={125}
-                  // height={10}
                   priority
-                  // placeholder="blur"
                 />
               </Link>
             </li>
@@ -62,7 +56,6 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
         ))}
         {/* <div className="col-span-full flex flex-col items-end sm:col-span-1 md:col-span-2"> */}
         {/* <NewsletterForm /> */}
-
         {/* </div> */}
       </div>
 

@@ -78,7 +78,7 @@ export function BlogCard({
         </div>
       </div>
       <Link href={data.slug} className="absolute inset-0">
-        <span className="sr-only">View Article</span>
+        <span className="sr-only">Ver Artigo</span>
       </Link>
     </article>
   );

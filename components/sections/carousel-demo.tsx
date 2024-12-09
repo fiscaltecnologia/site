@@ -1,8 +1,8 @@
 import * as React from "react";
-import logoImage1 from "@/public/_static/img-1.jpg";
-import logoImage2 from "@/public/_static/img-2.jpg";
-import logoImage3 from "@/public/_static/img-3.jpg";
-import logoImage4 from "@/public/_static/img-4.jpg";
+import logoImage1 from "@/public/_static/images/pages/landing/carousel/img-1.jpg";
+import logoImage2 from "@/public/_static/images/pages/landing/carousel/img-2.jpg";
+import logoImage3 from "@/public/_static/images/pages/landing/carousel/img-3.jpg";
+import logoImage4 from "@/public/_static/images/pages/landing/carousel/img-4.jpg";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {

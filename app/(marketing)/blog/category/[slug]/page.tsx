@@ -27,7 +27,7 @@ export async function generateMetadata({
   const { title, description } = category;
 
   return constructMetadata({
-    title: `${title} – Fiscaltech`,
+    title: `${title} | Fiscaltech`,
     description,
   });
 }
